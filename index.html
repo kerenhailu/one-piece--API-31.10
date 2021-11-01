@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web API</title>
+    <style>
+      body {
+        background-image: url("https://sm.ign.com/t/ign_il/blogroll/o/one-piece-/one-piece-world-seeker-review_zks2.1200.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100hv;
+        height: 100hv;
+      }
+      #sectionOfMovie {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .title {
+        font-size: large;
+      }
+      .card {
+        width: 40vh;
+        height: 50vh;
+        box-shadow: 10px 10px 10px;
+        background: linear-gradient(#a294f1, #fafcf8);
+        padding: 1%;
+        margin: 5%;
+        text-align: center;
+        border: 3px solid rgb(10, 12, 10);
+      }
+      img {
+        width: 25vh;
+        height: 40vh;
+        opacity: 0.8;
+      }
+      img:hover{
+        opacity: 0.6; 
+      }
+      #btn_input{
+          background-color: rgb(114, 146, 231);
+          width: 80px;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <title>search :</title>
+    <h2>print id :</h2>
+
+    <input id="search_input" type="text" />
+    <button id="btn_input">Go</button>
+    <section id="sectionOfMovie">
+      
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
