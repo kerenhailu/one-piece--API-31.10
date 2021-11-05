@@ -35,8 +35,10 @@ console.log(`${key} : ${object[key]}`);
 // 102472 id קיים במערכת
 // ===============================================
 
+//!one piece
+
 function showGif() {
-    sectionOfMovie.innerHTML='<img id="imgs" src="https://c.tenor.com/pI7xhu9bdSIAAAAM/one-piece.gif" width="100hv" height="100hv">' 
+    sectionOfMovie.innerHTML='<img id="imgs" src="https://c.tenor.com/pI7xhu9bdSIAAAAM/one-piece.gif">' 
 }
 
 function hideGif() {
@@ -45,15 +47,30 @@ imgs.style.display = "none";
 
 function print(obj) {
     obj.forEach(element => {
-        sectionOfMovie.innerHTML+=` <div class=title>${element.title}<br>
+        sectionOfMovie.innerHTML+=` <div class=title>${element.title}<br><br>
         <div class="card">
-        <img src="${element.image_url}"><br>
+        <img id="CentralImage" src="${element.image_url}"><br>
+       
         ${element.score}<br>
         ${element.airing}<br>
         ${element.type}
         </div></div>`
     });
 }
+
+//  <img onmouseover="${element.synopsis}" onmouseout="${element.image_url}" src="${element.image_url}"><br>
+// function bigImg(x) {
+//   CentralImage
+//   x.style.height = "64px";
+//   x.style.width = "64px";
+// }
+
+// function normalImg(x) {
+//   x.style.height = "40vh";
+//   x.style.width = "25vh";
+// }
+
+
 async function GoToApi(api) {
       try {
           showGif()
